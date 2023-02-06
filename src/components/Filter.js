@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/filter.css';
 import { FaTimes } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-import { Form } from 'react-bootstrap';
 import { Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Select from 'react-select';
@@ -20,8 +19,6 @@ export default function Filter({ setOpen }) {
             }
         }),
     };
-
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
     const trackOptions = [
         {
@@ -131,8 +128,3 @@ export default function Filter({ setOpen }) {
         </div>
     )
 }
-
-// const Filter = ({ open, onClose }) => {
-//     if (!open) return null;
-//     return ( );
-// };
