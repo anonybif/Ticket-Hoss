@@ -53,9 +53,7 @@ export default function Filter({ setOpen }) {
     const trackTypes = ["Dirt Oval", "Paved Oval", "Drag Strip", "Off Road", "Road Course", "Other"];
 
     return (
-        <div className="overlay"
-            onClick={() => { setOpen(false); }}
-        >
+        <div className="overlay">
             <div className="filterModal">
                 <div className='header'>
                     <h1 className='title'>Filter Tracks</h1>
@@ -122,7 +120,6 @@ export default function Filter({ setOpen }) {
                         <Button>Apply</Button>
                     </div>
                 </div>
-
 
             </div>
         </div>
