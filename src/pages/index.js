@@ -1,23 +1,34 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "../styles/global.css";
 import Navbar from "../components/navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilter, faFilterCircleDollar, faFilterCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { MdFilterAlt } from "react-icons/md";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from "react-bootstrap";
+import Filter from "../components/Filter";
 
 export default function Home() {
+  const [Open, setOpen] = useState(false);
   return (
     <>
       <Navbar />
       <div className="home">
-        <div className="header"></div>
-        <div className="search">
-          <div className="searchBar">
-            <input type="text" placeholder="Search Tracks" />
-            <button>Search</button>
+        <div className="search-container">
+          <div className="search">
+            <div className="searchBar">
+              <input type="text" placeholder="Search Tracks" />
+              <Button>Search</Button>
+            </div>
+            <a className="filterBtn" onClick={() => {
+              setOpen(true);
+            }} >
+              <MdFilterAlt />
+            </a>
           </div>
-          <span className="filterBtn"><FontAwesomeIcon icon={faFilter}></FontAwesomeIcon></span>
+          {Open && <Filter setOpen={setOpen} />}
         </div>
+        <div className="body"></div>
       </div>
+
     </>
   )
 }

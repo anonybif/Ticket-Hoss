@@ -1,0 +1,196 @@
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1980px;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    /* overflow-y: scroll; */
+}
+
+.filterModal {
+    position: absolute;
+    right: 95px;
+    top: 516px;
+    width: 375px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000033;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: '1000';
+    padding: 24px 0;
+    gap: 20px;
+}
+
+.filterModal .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 24px 10px 24px;
+    border-bottom: solid 1px #EAEAEA;
+}
+
+.filterModal .title {
+    display: flex;
+    background-color: #fff;
+    color: #000033;
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+}
+
+.filterModal .closeBtn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.filterModal .closeIcon {
+    fill: #FA4616;
+    background-color: #fff;
+}
+
+.filterModal .body {
+    padding: 0 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.secOne {
+    width: 100%;
+    height: 137px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.secTwo {
+    width: 100%;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropBtn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.dropIcon {
+    fill: #FA4616;
+    background-color: #fff;
+}
+
+.secOne .header,
+.secOne .title,
+.secOne .dropBtn,
+.secOne .dropIcon,
+.secTwo .header,
+.secTwo .title,
+.secTwo .dropBtn,
+.secTwo .dropIcon {
+    background-color: #EAEAEA;
+}
+
+.secOne .header {
+    height: 40px;
+    border-bottom: solid 1px #BBBBBB;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.secTwo .header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 24px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.secOne .header .title,
+.secTwo .header .title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.secOne .body {
+    background-color: #EAEAEA;
+    padding: 0px 24px;
+    border-radius: 0px 0px 8px 8px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secTwo .types {
+    background-color: #EAEAEA;
+    padding: 0 10px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.secOne .dropDown {
+    border-radius: 8px;
+    color: #000033;
+    background-color: #fff;
+    width: 100%;
+}
+
+.secTwo .checkBorder {
+    border-top: solid 1px #BBBBBB;
+    padding-left: 14px;
+}
+
+.secTwo .checkBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: #EAEAEA;
+    fill: #000033;
+    color: #000033;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    height: 50px;
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.footer Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: #FA4616;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
