@@ -5,12 +5,14 @@ import { MdFilterAlt } from "react-icons/md";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
 import Filter from "../components/Filter";
+import Carousel from "../components/carousel";
 
 export default function Home() {
   const [Open, setOpen] = useState(false);
   return (
     <>
       <Navbar />
+      <Carousel />
       <div className="home">
         <div className="search-container">
           <div className="search">
