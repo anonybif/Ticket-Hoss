@@ -5,14 +5,16 @@ import { MdFilterAlt } from "react-icons/md";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
 import Filter from "../components/Filter";
+import DownloadApp from "../components/DownloadApp";
 import Carousel from "../components/carousel";
 
 export default function Home() {
-  const [Open, setOpen] = useState(false);
+  const [OpenFilter, setOpenFilter] = useState(false);
+  const [OpenDownloadApp, setOpenDownloadApp] = useState(false);
   return (
     <>
       <Navbar />
-      <Carousel />
+      {/* <Carousel /> */}
       <div className="home">
         <div className="search-container">
           <div className="search">
@@ -21,13 +23,18 @@ export default function Home() {
               <Button>Search</Button>
             </div>
             <a className="filterBtn" onClick={() => {
-              setOpen(true);
+              setOpenFilter(true);
             }} >
               <MdFilterAlt />
             </a>
           </div>
-          {Open && <Filter setOpen={setOpen} />}
+          {OpenFilter && <Filter setOpenFilter={setOpenFilter} />}
         </div>
+        <Button className="downloadBtn" onClick={() => {
+          setOpenDownloadApp(true);
+        }} >Download
+        </Button>
+        {OpenDownloadApp && <DownloadApp setOpenDownloadApp={setOpenDownloadApp} />}
         <div className="body"></div>
       </div>
 

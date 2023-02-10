@@ -8,7 +8,7 @@ import Select from 'react-select';
 import { Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import { RiCheckboxBlankFill, RiCheckboxFill } from 'react-icons/ri';
 
-export default function Filter({ setOpen }) {
+export default function Filter({ setOpenFilter }) {
     const styles = {
         control: (base) => ({
             ...base,
@@ -57,7 +57,7 @@ export default function Filter({ setOpen }) {
             <div className="filterModal">
                 <div className='header'>
                     <h1 className='title'>Filter Tracks</h1>
-                    <button onClick={() => { setOpen(false); }} className="closeBtn">
+                    <button onClick={() => { setOpenFilter(false); }} className="closeBtn">
                         <FaTimes className='closeIcon' />
                     </button>
                 </div>

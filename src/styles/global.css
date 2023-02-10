@@ -107,3 +107,21 @@
     top: 500px;
     background-color: #fff;
 }
+
+.downloadBtn {
+    position: absolute;
+    top: 600px;
+    width: 145px;
+    height: 46px;
+    background-color: #FA4616 !important;
+    border: none !important;
+}
+
+.downloadModal {
+    width: 468px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
